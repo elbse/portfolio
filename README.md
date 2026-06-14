@@ -2,7 +2,7 @@
 
 Personal developer portfolio. Built with React, TypeScript, Tailwind CSS, and Vite.
 
-🔗 **Live:** [charisse-priego-43ytwj7t7-elbses-projects.vercel.app](https://charisse-priego-43ytwj7t7-elbses-projects.vercel.app)
+🔗 **Live:** [https://charisse-priego-43ytwj7t7-elbses-projects.vercel.app](https://charisse-priego.vercel.app/))
 
 ---
 
