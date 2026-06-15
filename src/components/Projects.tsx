@@ -14,28 +14,28 @@ const projects = [
     idx: "01", title: "ChangChang Inventory System",
     description: "Role-based inventory platform with clean dashboards and clear stock tracking.",
     work: "Frontend", tags: ["Tailwind CSS", "Laravel"],
-    code: "https://github.com/loftyyyy/ChangChangIntegratedInventoryAndSalesSystem.git",
-
+    code: "https://github.com/loftyyyy/ChangChangIntegratedInventoryAndSalesSystem",
+    live: "",
   },
   {
     idx: "02", title: "Love & Styles Rental System",
     description: "Rental management app for handling reservations, products, and customer records.",
     work: "Frontend + Backend", tags: ["Laravel", "Tailwind CSS", "MySQL"],
-    code: "https://github.com/loftyyyy/LSRSV2.git",
+    code: "https://github.com/loftyyyy/LSRSV2",
     live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
   {
     idx: "03", title: "Bitcoin Sentiment Analysis",
     description: "Sentiment dashboard analysing trends from cryptocurrency-related text data.",
     work: "Backend", tags: ["Python", "NLP"],
-    code: "https://github.com/loftyyyy/LSRSV2.git",
+    code: "https://github.com/loftyyyy/LSRSV2",
     live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
   {
     idx: "04", title: "Second Gear Marketplace",
     description: "Buy/sell car marketplace concept with modern UI and advanced filtering.",
     work: "Frontend", tags: ["Tailwind CSS"],
-    code: "https://github.com/loftyyyy/LSRSV2.git",
+    code: "https://github.com/loftyyyy/LSRSV2",
     live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
 ];
@@ -111,12 +111,18 @@ export default function Projects() {
             </div>
 
             <div className="hidden flex-col items-end gap-2 md:flex opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              <button className="flex items-center gap-1.5 font-['Geist_Mono'] text-[10px] tracking-[0.15em] uppercase text-white/40 hover:text-white transition-colors">
-                <GitBranch className="h-3.5 w-3.5" />Code
-              </button>
-              <button className="flex items-center gap-1.5 font-['Geist_Mono'] text-[10px] tracking-[0.15em] uppercase text-white/40 hover:text-white transition-colors">
-                <ExternalLink className="h-3.5 w-3.5" />Live
-              </button>
+              {p.code && (
+                <a href={p.code} target="_blank" rel="noreferrer"
+                  className="flex items-center gap-1.5 font-['Geist_Mono'] text-[10px] tracking-[0.15em] uppercase text-white/40 hover:text-white transition-colors">
+                  <GitBranch className="h-3.5 w-3.5" />Code
+                </a>
+              )}
+              {p.live && (
+                <a href={p.live} target="_blank" rel="noreferrer"
+                  className="flex items-center gap-1.5 font-['Geist_Mono'] text-[10px] tracking-[0.15em] uppercase text-white/40 hover:text-white transition-colors">
+                  <ExternalLink className="h-3.5 w-3.5" />Live
+                </a>
+              )}
             </div>
           </div>
         ))}
