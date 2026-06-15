@@ -14,21 +14,29 @@ const projects = [
     idx: "01", title: "ChangChang Inventory System",
     description: "Role-based inventory platform with clean dashboards and clear stock tracking.",
     work: "Frontend", tags: ["Tailwind CSS", "Laravel"],
+    code: "https://github.com/loftyyyy/ChangChangIntegratedInventoryAndSalesSystem.git",
+
   },
   {
     idx: "02", title: "Love & Styles Rental System",
     description: "Rental management app for handling reservations, products, and customer records.",
     work: "Frontend + Backend", tags: ["Laravel", "Tailwind CSS", "MySQL"],
+    code: "https://github.com/loftyyyy/LSRSV2.git",
+    live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
   {
     idx: "03", title: "Bitcoin Sentiment Analysis",
     description: "Sentiment dashboard analysing trends from cryptocurrency-related text data.",
     work: "Backend", tags: ["Python", "NLP"],
+    code: "https://github.com/loftyyyy/LSRSV2.git",
+    live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
   {
     idx: "04", title: "Second Gear Marketplace",
     description: "Buy/sell car marketplace concept with modern UI and advanced filtering.",
     work: "Frontend", tags: ["Tailwind CSS"],
+    code: "https://github.com/loftyyyy/LSRSV2.git",
+    live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
   },
 ];
 
