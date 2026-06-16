@@ -39,7 +39,7 @@ export default function Contacts() {
 
       <div className="px-6 py-28 md:px-12">
         <div className={`mb-16 flex items-center gap-4 transition-all duration-700 ${visible ? "opacity-100" : "opacity-0 translate-y-4"}`}>
-          <span className="font-['Geist_Mono'] text-[10px] tracking-[0.3em] uppercase text-white/25">03</span>
+          <span className="font-['Geist_Mono'] text-[10px] tracking-[0.3em] uppercase text-white/25">04</span>
           <div className="h-px flex-1 bg-white/[0.07]" />
           <span className="font-['Geist_Mono'] text-[10px] tracking-[0.3em] uppercase text-white/25">Contact</span>
         </div>

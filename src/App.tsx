@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import About from "./components/About";
+import Certifications from "./components/Certifications";
 import Contacts from "./components/Contacts";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -7,6 +8,7 @@ import Projects from "./components/Projects";
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -56,7 +58,7 @@ export default function App() {
       <header className="fixed top-0 z-50 w-full border-b border-white/[0.07] bg-black/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12">
           <a href="#" className="font-['Geist_Mono'] text-sm font-medium tracking-tight text-white">
-            CP<span className="text-white/30"></span>
+            CP<span className="text-white/30">_portfolio</span>
           </a>
           <div className="flex items-center gap-8">
             {navItems.map((item, i) => (
@@ -77,6 +79,7 @@ export default function App() {
         <Hero />
         <About />
         <Projects />
+        <Certifications />
         <Contacts />
       </main>
     </div>
