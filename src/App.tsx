@@ -58,7 +58,7 @@ export default function App() {
       <header className="fixed top-0 z-50 w-full border-b border-white/[0.07] bg-black/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12">
           <a href="#" className="font-['Geist_Mono'] text-sm font-medium tracking-tight text-white">
-            CP<span className="text-white/30">_portfolio</span>
+            Cha.
           </a>
           <div className="flex items-center gap-8">
             {navItems.map((item, i) => (
