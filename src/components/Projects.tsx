@@ -28,15 +28,15 @@ const projects = [
     idx: "03", title: "Bitcoin Sentiment Analysis",
     description: "Sentiment dashboard analysing trends from cryptocurrency-related text data.",
     work: "Backend", tags: ["Python", "NLP"],
-    code: "https://github.com/loftyyyy/LSRSV2",
-    live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
+    code: "https://github.com/elbse/bitcoin-sentiment-analysis.git",
+    
   },
   {
     idx: "04", title: "Second Gear Marketplace",
     description: "Buy/sell car marketplace concept with modern UI and advanced filtering.",
     work: "Frontend", tags: ["Tailwind CSS"],
-    code: "https://github.com/loftyyyy/LSRSV2",
-    live: "https://lsrs-2a3261dcc58d.herokuapp.com/",
+    code: "https://github.com/loftyyyy/SecondGear.git",
+  
   },
 ];
 
