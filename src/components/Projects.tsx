@@ -42,7 +42,7 @@ const projects = [
     idx: "05", title: "Project Taguro",
     description: "A team and task management system with a focus on collaboration and productivity.",
     work: "Full Stack Developer(Internship)", tags: ["React", "Tailwind CSS", "Laravel"],
-    code: "https://github.com/loftyyyy/SecondGear.git",
+    code: "https://taguro.manpromanagement.com/",
   },
 ];
 
