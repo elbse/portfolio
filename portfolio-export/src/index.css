@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --fg-muted: rgba(255,255,255,0.45);
+    --fg-dim: rgba(255,255,255,0.18);
+    --border: rgba(255,255,255,0.1);
+    --border-hover: rgba(255,255,255,0.25);
+    --accent: #ffffff;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #000;
+    color: #fff;
+    font-family: 'Geist', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    min-width: 320px;
+    cursor: none;
+  }
+
+  #root { min-height: 100vh; }
+
+  /* ── Custom cursor ── */
+  .cursor-dot {
+    width: 6px; height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s, opacity 0.2s;
+  }
+  .cursor-ring {
+    width: 32px; height: 32px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.18s cubic-bezier(0.23,1,0.32,1), width 0.25s, height 0.25s, border-color 0.2s;
+  }
+  .cursor-ring.hovered {
+    width: 56px; height: 56px;
+    border-color: rgba(255,255,255,0.9);
+  }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 2px; }
+  ::-webkit-scrollbar-track { background: #000; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); }
+
+  /* ── Entrance animations ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes lineGrow {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+  @keyframes charIn {
+    from { opacity: 0; transform: translateY(100%); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .anim-fade-up   { animation: fadeUp  0.7s cubic-bezier(0.23,1,0.32,1) both; }
+  .anim-fade-in   { animation: fadeIn  0.5s ease both; }
+  .anim-line-grow { animation: lineGrow 0.8s cubic-bezier(0.23,1,0.32,1) both; transform-origin: left; }
+}
