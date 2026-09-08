@@ -77,7 +77,7 @@ export default function Projects() {
             <div className="absolute left-0 top-0 h-full w-0.5 bg-white transition-all duration-300"
               style={{ transform: hovered === i ? "scaleY(1)" : "scaleY(0)", transformOrigin: "top" }} />
 
-            <span className="font-['Geist_Mono'] text-sm font-medium text-white/15 group-hover:text-white/40 transition-colors pt-1 pl-3">
+            <span className="font-['Geist_Mono'] text-sm font-medium text-white/15 group-hover:text-white/40 transition-colors pt-1 pl-4">
               {p.idx}
             </span>
 
